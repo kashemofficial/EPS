@@ -130,6 +130,7 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
             vc.comeFromDidselect = true
             vc.urName = userData[indexPath.row].userNames
             vc.address = userData[indexPath.row].userAddress
+            vc.urAmount = userData[indexPath.row].userAmmount            
             self.present(vc, animated: true)
     }
 }
@@ -144,11 +145,12 @@ extension ViewController: GetData {
 }
 
 extension ViewController: updateData{
-    
-    func userUpdateData(name: String, address: String,amount: String) {
+    func userUpdateData(uId: String, cuDate: String,name: String, address: String,amount: String) {
         userData[selectedIndex ?? 0].userNames = name
         userData[selectedIndex ?? 0].userAddress = address
         userData[selectedIndex ?? 0].userAmmount = amount
+        userData[selectedIndex ?? 0].currentDates = cuDate
+        userData[selectedIndex ?? 0].userId = uId
         
         let indexPath = IndexPath(item: selectedIndex ?? 0, section: 0)
         tableView.reloadRows(at: [indexPath], with: .top)

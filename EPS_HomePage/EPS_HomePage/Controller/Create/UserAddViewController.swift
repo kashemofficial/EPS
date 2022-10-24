@@ -12,7 +12,7 @@ protocol GetData {
 }
 
 protocol updateData {
-    func userUpdateData(name: String, address: String,amount: String)
+    func userUpdateData(uId: String,cuDate: String,name: String, address: String,amount: String)
 }
 
 class UserAddViewController: UIViewController{
@@ -46,7 +46,7 @@ class UserAddViewController: UIViewController{
 //        userAddressTextView.delegate = self
 //        userAddressTextView.text = userAddressPlaceHolder
 //        userAddressTextView.textColor = .lightGray
-//
+
         if comeFromDidselect {
             navNameLable.text = "Update Data"
             saveOrUpdateButton.setTitle("Update", for: .normal)
@@ -98,7 +98,7 @@ class UserAddViewController: UIViewController{
         
         if comeFromDidselect {
             if let updateDelegate = updateDelegate {
-                updateDelegate.userUpdateData(name: userNameTextView.text ?? "", address: userAddressTextView.text ?? "",amount: useramountTextView.text ?? "")
+                updateDelegate.userUpdateData(uId: uid, cuDate: cdate, name: userNameTextView.text ?? "", address: userAddressTextView.text ?? "", amount: useramountTextView.text ?? "")
             }
             
         }else{
