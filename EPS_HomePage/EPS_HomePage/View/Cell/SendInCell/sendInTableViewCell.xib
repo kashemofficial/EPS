@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="sendInTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="sendInCell" rowHeight="174" id="8Df-qe-AdO" customClass="sendInTableViewCell" customModule="EPS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8Df-qe-AdO" id="mw7-xP-OmX">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0w-zd-A2o">
+                        <rect key="frame" x="10" y="30" width="40" height="30"/>
+                        <color key="backgroundColor" red="0.92941176889999999" green="0.71372550729999995" blue="0.74117654560000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="gkm-9R-YP7"/>
+                            <constraint firstAttribute="width" constant="40" id="qhY-Yq-J2Z"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                        <color key="tintColor" systemColor="tintColor"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="Send">
+                            <color key="titleColor" systemColor="systemPinkColor"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Tarik Anam" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hNj-rn-dLe">
+                        <rect key="frame" x="60" y="10" width="120" height="13.333333333333336"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="ugx-gy-z8D"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="January 15,2022" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1BP-Od-xzp">
+                        <rect key="frame" x="60" y="33.333333333333336" width="100" height="12"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="52C-5r-cL7"/>
+                            <constraint firstAttribute="height" constant="12" id="ZZM-yG-4xW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="022920202" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="siG-Sy-XEW">
+                        <rect key="frame" x="190" y="40" width="61.666666666666657" height="13.333333333333336"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="৳ 255.00" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3rM-Zq-xjL">
+                        <rect key="frame" x="266.66666666666669" y="40" width="137.33333333333331" height="13.333333333333336"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Chandpur,Chittagong,Dhaka,Bangladesh" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7mu-Ac-0GE">
+                        <rect key="frame" x="60" y="50.333333333333336" width="110" height="24.000000000000007"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="110" id="cok-Wv-ToD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hNj-rn-dLe" firstAttribute="top" secondItem="mw7-xP-OmX" secondAttribute="top" constant="10" id="4lP-QD-Sk5"/>
+                    <constraint firstItem="q0w-zd-A2o" firstAttribute="leading" secondItem="mw7-xP-OmX" secondAttribute="leading" constant="10" id="6LI-fM-mbY"/>
+                    <constraint firstItem="3rM-Zq-xjL" firstAttribute="top" secondItem="mw7-xP-OmX" secondAttribute="top" constant="40" id="BrG-qy-G8Q"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="7mu-Ac-0GE" secondAttribute="bottom" constant="10" id="M4B-Xj-5rD"/>
+                    <constraint firstItem="1BP-Od-xzp" firstAttribute="top" secondItem="hNj-rn-dLe" secondAttribute="bottom" constant="10" id="MBY-Ol-HhU"/>
+                    <constraint firstItem="q0w-zd-A2o" firstAttribute="top" secondItem="mw7-xP-OmX" secondAttribute="top" constant="30" id="Pex-IL-WGP"/>
+                    <constraint firstItem="7mu-Ac-0GE" firstAttribute="leading" secondItem="mw7-xP-OmX" secondAttribute="leading" constant="60" id="UVi-cn-NQj"/>
+                    <constraint firstAttribute="trailing" secondItem="3rM-Zq-xjL" secondAttribute="trailing" constant="10" id="Wde-PM-bDt"/>
+                    <constraint firstItem="3rM-Zq-xjL" firstAttribute="leading" secondItem="siG-Sy-XEW" secondAttribute="trailing" constant="15" id="ZA7-3Z-0q9"/>
+                    <constraint firstItem="hNj-rn-dLe" firstAttribute="leading" secondItem="q0w-zd-A2o" secondAttribute="trailing" constant="10" id="bmh-IX-jym"/>
+                    <constraint firstItem="1BP-Od-xzp" firstAttribute="leading" secondItem="q0w-zd-A2o" secondAttribute="trailing" constant="10" id="cs8-Na-rnu"/>
+                    <constraint firstItem="siG-Sy-XEW" firstAttribute="leading" secondItem="hNj-rn-dLe" secondAttribute="trailing" constant="10" id="rEz-4C-8j7"/>
+                    <constraint firstItem="siG-Sy-XEW" firstAttribute="top" secondItem="mw7-xP-OmX" secondAttribute="top" constant="40" id="uO4-5G-7a7"/>
+                    <constraint firstItem="7mu-Ac-0GE" firstAttribute="top" secondItem="1BP-Od-xzp" secondAttribute="bottom" constant="5" id="uww-Cj-YFA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressLabel" destination="7mu-Ac-0GE" id="R8a-ul-svM"/>
+                <outlet property="amountLabel" destination="3rM-Zq-xjL" id="tt2-Fj-evE"/>
+                <outlet property="dateLabel" destination="1BP-Od-xzp" id="glk-5o-uVE"/>
+                <outlet property="idLabel" destination="siG-Sy-XEW" id="CCV-Jn-Oaf"/>
+                <outlet property="mButton" destination="q0w-zd-A2o" id="u6n-P7-67a"/>
+                <outlet property="nameLabel" destination="hNj-rn-dLe" id="4zC-8q-9jQ"/>
+            </connections>
+            <point key="canvasLocation" x="113.04347826086958" y="198.91304347826087"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
