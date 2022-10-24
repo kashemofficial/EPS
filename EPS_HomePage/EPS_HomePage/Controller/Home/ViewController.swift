@@ -20,6 +20,8 @@ class ViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//
+        
         
         userData = [
             User(userNames: "Tarik Anam", currentDates: "January 15,2022", userId: "022920202", userAmmount: "৳ 12000.00", userAddress: "Chandpur,Chittagong,Dhaka,Bangladesh"),
