@@ -20,8 +20,6 @@ class ViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//
-        
         
         userData = [
             User(userNames: "Tarik Anam", currentDates: "January 15,2022", userId: "022920202", userAmmount: "৳ 12000.00", userAddress: "Chandpur,Chittagong,Dhaka,Bangladesh"),
@@ -145,10 +143,12 @@ extension ViewController: GetData {
     
 }
 
-extension ViewController: updateData {
-    func userUpdateData(name: String, address: String) {
+extension ViewController: updateData{
+    
+    func userUpdateData(name: String, address: String,amount: String) {
         userData[selectedIndex ?? 0].userNames = name
         userData[selectedIndex ?? 0].userAddress = address
+        userData[selectedIndex ?? 0].userAmmount = amount
         
         let indexPath = IndexPath(item: selectedIndex ?? 0, section: 0)
         tableView.reloadRows(at: [indexPath], with: .top)

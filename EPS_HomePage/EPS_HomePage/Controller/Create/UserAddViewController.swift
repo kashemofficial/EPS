@@ -12,7 +12,7 @@ protocol GetData {
 }
 
 protocol updateData {
-    func userUpdateData(name: String, address: String)
+    func userUpdateData(name: String, address: String,amount: String)
 }
 
 class UserAddViewController: UIViewController{
@@ -29,7 +29,8 @@ class UserAddViewController: UIViewController{
     var comeFromDidselect = false
     var urName: String?
     var address: String?
-
+    var urAmount: String?
+    
 //    let userNamePlaceHolder = ""
 //    let userAmountPlaceHolder = ""
 //    let userAddressPlaceHolder = ""
@@ -49,10 +50,11 @@ class UserAddViewController: UIViewController{
         if comeFromDidselect {
             navNameLable.text = "Update Data"
             saveOrUpdateButton.setTitle("Update", for: .normal)
-            useramountTextView.isHidden = true
+//            useramountTextView.isHidden = true
             
             userNameTextView.text = urName ?? ""
             userAddressTextView.text = address ?? ""
+            useramountTextView.text = urAmount ?? ""
         }
     }
     
@@ -96,7 +98,7 @@ class UserAddViewController: UIViewController{
         
         if comeFromDidselect {
             if let updateDelegate = updateDelegate {
-                updateDelegate.userUpdateData(name: userNameTextView.text ?? "", address: userAddressTextView.text ?? "")
+                updateDelegate.userUpdateData(name: userNameTextView.text ?? "", address: userAddressTextView.text ?? "",amount: useramountTextView.text ?? "")
             }
             
         }else{
