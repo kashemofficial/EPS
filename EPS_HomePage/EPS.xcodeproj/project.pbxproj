@@ -140,11 +140,13 @@
 		6C66D15A28F429BE00EABD67 /* EPS_HomePage */ = {
 			isa = PBXGroup;
 			children = (
-				6C920001291BA44A00CDDFC1 /* Supportings */,
-				6C58F26C28FB1F2600467726 /* Models */,
 				6C66D18B28F42A2100EABD67 /* System */,
+				6C58F26C28FB1F2600467726 /* Models */,
 				6C66D18D28F42A3000EABD67 /* View */,
 				6C66D18C28F42A2700EABD67 /* Controller */,
+				6C66D16428F429BF00EABD67 /* Assets.xcassets */,
+				6C66D16928F429BF00EABD67 /* Info.plist */,
+				6C66D16628F429BF00EABD67 /* LaunchScreen.storyboard */,
 			);
 			path = EPS_HomePage;
 			sourceTree = "<group>";
@@ -199,16 +201,6 @@
 				6C5C34CE28F5B724001E69DA /* SendInCell */,
 			);
 			path = Cell;
-			sourceTree = "<group>";
-		};
-		6C920001291BA44A00CDDFC1 /* Supportings */ = {
-			isa = PBXGroup;
-			children = (
-				6C66D16628F429BF00EABD67 /* LaunchScreen.storyboard */,
-				6C66D16428F429BF00EABD67 /* Assets.xcassets */,
-				6C66D16928F429BF00EABD67 /* Info.plist */,
-			);
-			path = Supportings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
